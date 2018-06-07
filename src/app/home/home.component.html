@@ -1,0 +1,13 @@
+<div *ngIf="isReady">
+  il est prêt
+</div>
+
+<button (click)="onClick()">changer</button>
+
+<ul>
+  <li *ngFor="let n of numbers">{{n}}</li>
+</ul>
+
+<input type="text" [(ngModel)]="name"  >
+
+{{name}}

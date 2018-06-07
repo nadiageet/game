@@ -1,0 +1,5 @@
+<div (click)="userSelected=user" *ngFor="let user of users">
+  {{user.username}}
+</div>
+
+<app-game (evenement)="lireMessage($event)" [user]="userSelected"></app-game>
